@@ -1,0 +1,89 @@
+p,h4{margin:0;}
+body{
+    font-family: -apple-system-font,Helvetica Neue,Helvetica,sans-serif;
+    background-color: #DEDCDF;
+    font-size: 13px;
+    display: block;
+}
+
+
+.list_wrapper{
+    background-color: #DEDCDF;
+    padding: 10px;
+    font-size: 16px;
+}
+.list_item{
+    background-color: #fff;
+    border-radius: 5px;
+    padding: 5px 0 5px 5px;
+    height: 170px;
+    margin-bottom: 10px;
+    /*background: linear-gradient(to bottom, #ffffff 0%,#F0F2F2 100%);*/
+    background: linear-gradient(to bottom, #ffffff 0%,#ffffff 50%,#F3F3F3 100%);
+    position: relative;
+}
+.item_symbol{
+    width: 12px;
+    height: 12px;
+    background-color: #48b2e7;
+    float: left;
+    margin: 5px 5px 0;
+    border-radius: 13px;
+    box-shadow: 0 0 15px #48b2e7, 0 0 5px red;
+}
+.after_symbol_text{
+    margin: 0 0 0 30px;
+    color: #AAA7AA;
+}
+.item_nosymbol_part{
+    margin: 6px 30px;
+}
+.item_title{
+    font-size: 20px;
+    color: #868386;
+}
+.item_remark{
+    margin: 10px 0;
+    color: #5A5A5A;
+    max-height: 40px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 3;
+    overflow: hidden;
+    position: relative;
+    line-height: 20px;
+}
+
+
+.note{
+    float: right;
+}
+.note_left_part{
+    width: 0;
+    height: 0;
+    border-width: 20px 20px 20px 0;
+    border-style: solid;
+    border-color: transparent #7ace5d transparent transparent;
+    position: absolute;
+    float: left;
+    right: 100px;
+    bottom: 15px;
+}
+.note_right_part{
+    float: right;
+    background-color: #7ace5d;
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    color: #fff;
+    position: absolute;
+    right: 0px;
+    bottom: 15px;
+}
+.listHead{width: 100%;height: 80px;background-image:url("../images/top-bg.jpg");background-size: 100% 100%;background-repeat: no-repeat;}
+.listHead .listHeadBox{float: left;width: 70%;text-align: center;margin-top: 25px;}
+.listHead .listHeadBox .title{font-size: 20px;  color: #ffffff;}
+.listHead .listHeadBox .subtitle{font-size: 12px;  color: #ffffff;}
+
+.data-btn-disable{float: right;font-size: 14px;color: #ffffff;background-color: #999999;padding: 6px 12px;margin-top: 25px;margin-right: 15px;  border-radius: 5px;  }
+.data-btn-star {  float: right;font-size: 2rem;color: #ffffff;background-color: #00B290;padding: 20px 30px;margin-top: 60px;margin-right: 50px;  border-radius: 20px;  }

@@ -1,0 +1,10 @@
+@charset "UTF-8";
+
+/*智能评测 start*/
+#evaluationBox{max-width: 1000px;margin: auto;}
+#evaluationBox .evaluationHead{  font-size: 20px;text-align: center;height: 50px;line-height: 50px;background-image: url("../images/top-bg.jpg");background-size: 100% 100%;background-repeat: no-repeat;color: #fff;}
+#evaluationBox .evaluationList{margin: 0.3rem;}
+#evaluationBox .evaluationList .itemLink{margin-bottom: 0.3rem;}
+#evaluationBox .evaluationList .itemLink a{display: block;}
+#evaluationBox .evaluationList .itemLink img{width: 100%;background-size: 100% 100%;background-repeat: no-repeat;}
+/*智能评测 start*/

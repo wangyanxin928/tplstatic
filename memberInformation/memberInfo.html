@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>个人中心</title>
+    <meta name="keywords" content="陪你画">
+    <meta name="description" content="陪你画">
+    <link href="../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../css/common.css" rel="stylesheet">
+    <link href="../../css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../css/owl.theme.default.min.css">
+    <link href="../../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../css/ui-select.css">
+    <link href="../../css/media-style.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../../js/jquery.min.js"></script>
+    <script src="../../js/bootstrap.min.js"></script>
+    <script src="../../js/jquery.actual.min.js"></script>
+    <script src="../../js/owl.carousel.js"></script>
+    <script src="../../js/jquery.style.js"></script>
+    <script src="../../js/ui-select.js"></script>
+    <script src="../../js/picturefill.min.js"></script>
+    <script language="javascript" src="../../js/Validform_v5.js"></script>
+    <script>
+        document.createElement("picture");
+    </script>
+    <script src="../../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body class="skin-cont">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="../index.htm"><img src="../../images/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="../index.htm">首页</a></li>
+                <li><a href="../evaluation.html">智能测评</a></li>
+                <li><a href="../evaluationBox/experience1.html">研学体验</a></li>
+                <li><a href="../theEntrance/university/school1.html">升学检索</a></li>
+                <li><a href="../theEntrance/university/theEntrance.html">升学资讯</a></li>
+                <li><a href="../aboutUs/marketCoverage.html">关于我们</a></li>
+            </ul>
+            <div class="user-a navbar-left">
+                <a href="../memberInformation/memberInfo.html" title="1006888910"><span><img
+                        src="../../images/img-02.png"></span><span
+                        style="overflow: hidden; max-width: 50px">1006888910</span></a>
+                <a href="#">退出</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container cont-main">
+    <div class="member-center box-warp">
+        <div class="m-title"><span><img src="#"
+                                        alt=""></span>我的个人中心
+        </div>
+        <div class="main">
+            <div class="tab-tit fix">
+                <a href="javascript:;" class="current">个人资料</a>
+                <a href="javascript:;" class="">我的测评</a>
+            </div>
+            <form class="registerform" method="post" action="#">
+                <div class="tab-cont">
+                    <div style="display: block;">
+                        <div class="form-group box fix">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s"><font color="red">*</font>学生姓名：</label>
+                                    <div class="col-sm-8 r-s">
+                                        <input type="text" name="info[name]" class="form-control input-lg" value=""
+                                               datatype="*" nullmsg="姓名不能为空！" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 control-label"><font color="red">*</font>性别：</label>
+                                    <div class="col-sm-8 r-s">
+                                        <span class="mr20"><input type="radio" name="info[sex]" value="1" checked=""
+                                                                  datatype="*" nullmsg="请选择性别！">&nbsp;男</span>
+                                        <span><input type="radio" name="info[sex]" value="2" datatype="*"
+                                                     nullmsg="请选择性别！">&nbsp;女</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group box fix">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s">学籍所在学校：</label>
+                                    <div class="col-sm-8 r-s">
+                                        <input type="text" name="info[school_address]" value=""
+                                               class="form-control input-lg" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 control-label"><font color="red">*</font>出生年月日：</label>
+                                    <div class="col-sm-8 r-s form-inline">
+                                        <input type="date">
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="form-group box fix">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s"><font color="red">*</font>现就读学校：</label>
+                                    <div class="col-sm-8 r-s form-inline">
+                                        <select class="form-control input-lg Validform_error" name="info[provice]"
+                                                style="width:95px" datatype="*" nullmsg="请选择学校所在省份！" id="provice"
+                                                onchange="selRegion_val();">
+                                            <option value="">省</option>
+                                            <option value="2">北京</option>
+                                            <option value="3">天津</option>
+                                            <option value="4">河北省</option>
+                                            <option value="5">山西省</option>
+                                            <option value="6">内蒙古自治区</option>
+                                            <option value="7">辽宁省</option>
+                                            <option value="8">吉林省</option>
+                                            <option value="9">黑龙江省</option>
+                                            <option value="10">上海</option>
+                                            <option value="11">江苏省</option>
+                                            <option value="12">浙江省</option>
+                                            <option value="13">安徽省</option>
+                                            <option value="14">福建省</option>
+                                            <option value="15">江西省</option>
+                                            <option value="16">山东省</option>
+                                            <option value="17">河南省</option>
+                                            <option value="18">湖北省</option>
+                                            <option value="19">湖南省</option>
+                                            <option value="20">广东省</option>
+                                            <option value="21">广西壮族自治区</option>
+                                            <option value="22">海南省</option>
+                                            <option value="23">重庆</option>
+                                            <option value="24">四川省</option>
+                                            <option value="25">贵州省</option>
+                                            <option value="26">云南省</option>
+                                            <option value="27">西藏自治区</option>
+                                            <option value="28">陕西省</option>
+                                            <option value="29">甘肃省</option>
+                                            <option value="30">青海省</option>
+                                            <option value="31">宁夏回族自治区</option>
+                                            <option value="32">新疆维吾尔自治区</option>
+                                            <option value="33">台湾</option>
+                                            <option value="34">香港特别行政区</option>
+                                            <option value="35">澳门特别行政区</option>
+                                            <option value="36">海外</option>
+                                        </select>
+                                        <select class="form-control input-lg" name="info[city]" style="width:95px"
+                                                datatype="*" nullmsg="请选择学校所在城市!" id="city"
+                                                onchange="selRegion_district();">
+                                            <option value="">市</option>
+                                        </select>
+                                        <input type="text" name="info[school_name]" value="" datatype="*"
+                                               nullmsg="请添加现就读学校！" class="form-control input-lg" style="width:145px"
+                                               placeholder="">
+                                        <!--
+                                        <select class="form-control input-lg" name="info[school_bid]" onchange="selgrade(this.value)" id="school" datatype="*" nullmsg="请选择现就读学校！">
+                                            <option value="">请选择现就读学校</option>
+                                            <option value='7'>北京十一中学</option><option value='8'>北京传媒小学</option><option value='13'>北京朝阳大学</option><option value='18'>二中</option><option value='19'>北京市人大民大学附属中学</option><option value='21'>成都市列五高级中学</option><option value='30'>成都市树德中学（光华学校）</option><option value='42'>成都市树德中学</option><option value='49'>射洪外国语学校</option><option value='60'>车城中学</option><option value='78'>北京师范大学第三附属中学</option><option value='92'>七中万达 </option><option value='105'>成都七中八一学校 </option>                                    </select>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s"><font color="red">*</font>年级：</label>
+                                    <div class="col-sm-8 r-s form-inline">
+                                        <select class="form-control input-lg" name="info[grade]" id="grade" datatype="*"
+                                                nullmsg="请选择年级">
+                                            <option value="">请选择</option>
+                                            <option value="1">初一
+                                            </option>
+                                            <option value="2">初二
+                                            </option>
+                                            <option value="3">初三
+                                            </option>
+                                            <option value="4">高一
+                                            </option>
+                                            <option value="5">高二
+                                            </option>
+                                            <option value="6">高三
+                                                <!--
+                                                -->
+                                            </option>
+                                        </select>
+                                        <label class="ml20 mr20"><font color="red">*</font>班级：</label>
+
+                                        <input type="text" name="info[class_name]" style="width:130px;" value=""
+                                               class="form-control input-lg" placeholder="">
+                                        <!--
+                                        <select class="form-control input-lg" name="info[class]" id="class" datatype="*" nullmsg="请选择班级">
+                                            <option value="">请选择</option>
+                                                                                </select>
+                                        -->
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group box fix">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s"><font color="red">*</font>学籍号：</label>
+                                    <div class="col-sm-8 r-s">
+                                        <input type="text" datatype="idnum" class="form-control input-lg" value=""
+                                               name="info[stu_number]" errormsg="学籍号不正确！" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s"><font color="red">*</font>身份证号：</label>
+                                    <div class="col-sm-8 r-s">
+                                        <input type="text" datatype="idnum" class="form-control input-lg" value=""
+                                               name="info[id_number]" errormsg="身份证信息不正确！" placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group box fix">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s"><font color="red">*</font>手机号：</label>
+                                    <div class="col-sm-8 r-s">
+                                        <input type="text" class="form-control input-lg" value="" name="info[tel]"
+                                               datatype="m" nullmsg="手机号不能为空！" errormsg="手机格式不正确！" placeholder="">
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s">微信号：</label>
+                                    <div class="col-sm-8 r-s">
+                                        <input type="text" class="form-control input-lg" value="" name="other[wechat]"
+                                               placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="form-group box fix">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s">QQ号：</label>
+                                    <div class="col-sm-8 r-s">
+                                        <input type="text" class="form-control input-lg" value="" name="other[qq]"
+                                               placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s">Email：</label>
+                                    <div class="col-sm-8 r-s">
+                                        <input type="text" class="form-control input-lg" value="1006888910@qq.com"
+                                               name="info[email]" datatype="e" nullmsg="邮箱不能为空！" errormsg="邮箱格式不正确！"
+                                               placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group box fix">
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s">家长姓名：</label>
+                                    <div class="col-sm-8 r-s">
+                                        <input type="text" class="form-control input-lg" value="" name="other[name]"
+                                               placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="row">
+                                    <label class="col-sm-4 l-s">家长手机号：</label>
+                                    <div class="col-sm-8 r-s">
+                                        <input type="text" class="form-control input-lg" value=""
+                                               name="info[tel]" datatype="e" nullmsg="手机格式不正确！" errormsg="手机格式不正确！"
+                                               placeholder="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="form-group box fix">
+                            <div style="text-align: center;">
+                                <button type="submit" class="btn user-btn m-btn btn-lg">保存</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="cont" style="display: none;">
+                    <div class="review-box-new">
+                        <div class="title mb20">我的评测</div>
+                        <div class="row">
+                            <div class="col-md-3 col-xs-6 box-w">
+                                <div class="s-box">
+                                    <img src="http://web1709280001.gz01.bdysite.com/static/images/1.jpg"
+                                         alt="学业现状自检">
+                                    <div class="b-cont">
+                                        <div class="b-icon"><img
+                                                src="../../images/c41e7c4156125d2e1c20dc7f2cee1892.png"
+                                                alt="学业现状自检"></div>
+                                        <div class="a-warp">
+                                            <a href="#" class="b-title mt-01">
+                                                <span>学业现状自检</span>
+                                                <em class="en">School status self check</em>
+                                            </a>
+                                            <a href=""
+                                               class="b-btn">去测评</a>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6 box-w">
+                                <div class="s-box">
+                                    <img src="http://web1709280001.gz01.bdysite.com/static/images/2.jpg"
+                                         alt="兴趣选课测量">
+                                    <div class="b-cont">
+                                        <div class="b-icon"><img
+                                                src="http://web1709280001.gz01.bdysite.com/static/kindeditor/attached/image/20171012/f792a5ea6ee5f9afb1408add74da15c7.png"
+                                                alt="兴趣选课测量"></div>
+                                        <div class="a-warp">
+                                            <a href="#" class="b-title mt-01">
+                                                <span>兴趣选课测量</span>
+                                                <em class="en">Elective course measurement</em>
+                                            </a>
+                                            <a href="#"
+                                               class="b-btn">去测评</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6 box-w">
+                                <div class="s-box">
+                                    <img src="../../images/3.jpg"
+                                         alt="高校专业选择">
+                                    <div class="b-cont">
+                                        <div class="b-icon"><img
+                                                src="http://web1709280001.gz01.bdysite.com/static/kindeditor/attached/image/20171012/7696360b261a668122531155a28da10d.png"
+                                                alt="高校专业选择"></div>
+                                        <div class="a-warp">
+                                            <a href="#" class="b-title mt-01">
+                                                <span>高校专业选择</span>
+                                                <em class="en">University professional choice</em>
+                                            </a>
+                                            <a href="" class="b-btn">去测评</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3 col-xs-6 box-w">
+                                <div class="s-box">
+                                    <img src="http://web1709280001.gz01.bdysite.com/static/images/4.jpg"
+                                         alt="未来职业评估">
+                                    <div class="b-cont">
+                                        <div class="b-icon"><img
+                                                src="http://web1709280001.gz01.bdysite.com/static/kindeditor/attached/image/20171012/e0af734579194549414d9c6caa01d0a0.png"
+                                                alt="未来职业评估"></div>
+                                        <div class="a-warp">
+                                            <a href="#" class="b-title mt-01">
+                                                <span>未来职业评估</span>
+                                                <em class="en"> Future career evaluation</em>
+                                            </a>
+                                            <a href=""
+                                               class="b-btn">去测评</a>
+
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+
+<footer>
+    <div class="container">
+        <div class="other-info">
+            <div class="row">
+                <div class="col-lg-4 col-sm-8 other-l">
+                    <div class="l-info">
+                        <div class="tel">
+                            <span>010-5715-7190</span>
+                            24小时咨询热线
+                        </div>
+                        <div class="txt">
+                            <p>客服工作时间：</p>
+                            <p class="mb5">周一至周日 9：00 -- 23：00</p>
+                            <p>地址：北京市北京经济技术开发区隆庆街18号</p>
+                        </div>
+                    </div>
+                    <div class="l-erwm">
+                        <img src="../../images/57f7d4fc5dbdb97798185ecb179f2a34.jpg">
+                    </div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-lg-push-6 f-erwm fix">
+                    <div class="erwm-group">
+                        <div class="erwm-box">
+                            <img src="../../images/img-62.png">
+                            <div class="img-s">
+                                <img src="../../images/5fcec97f7667a045689ca88b0b32dd08.jpg">
+                            </div>
+                        </div>
+                        <div class="erwm-box">
+                            <img src="../../images/img-63.png">
+                            <div class="img-s">
+                                <img src="../../images/3cc98425fe27bd3f456f804a8906b6e4.jpg">
+                            </div>
+                        </div>
+                        <div class="erwm-box">
+                            <img src="../../images/img-64.png">
+                            <div class="img-s">
+                                <img src="../../images/4c6eb8525d39209a5f3779f5e3130120.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear-line fix"></div>
+                <div class="col-lg-6 col-lg-pull-2 other-r">
+                    <div class="row">
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">智能测评</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="javascript:void(0)" class="login-b" title="学业现状自检">学业现状自检</a>
+                                    <a href="javascript:void(0)" class="login-b" title="兴趣选课测量">兴趣选课测量</a>
+                                    <a href="javascript:void(0)" class="login-b" title="高校专业选择">高校专业选择</a>
+                                    <a href="javascript:void(0)" class="login-b" title="未来职业评估">未来职业评估</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">研学体验</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="javascript:void(0)" title="研学营文件">研学营文件</a>
+                                    <a href="javascript:void(0)" title="往期案例">往期案例</a>
+                                    <a href="javascript:void(0)" title="学业规划培训">学业规划培训</a>
+                                    <a href="javascript:void(0)" title="报名链接">报名链接</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">升学检索</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="javascript:void(0)" title="高校招简">高校招简</a>
+                                    <a href="javascript:void(0)" title="教培搜索">教培搜索</a>
+                                    <a href="javascript:void(0)" title="留学与游学">留学与游学</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">升学资讯</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="javascript:void(0)" title="新高考.新资讯">新高考.新资</a>
+                                    <a href="javascript:void(0)" title="中学生升学竞赛培优">中学生升学竞</a>
+                                    <a href="javascript:void(0)" title="中学生社会实践活动">中学生社会实</a>
+                                    <a href="javascript:void(0)" title="科技时代职业发展变化">科技时代职业</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">关于我们</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="javascript:void(0)" title="市场覆盖">市场覆盖</a>
+                                    <a href="javascript:void(0)" title="企业简介">企业简介</a>
+                                    <a href="javascript:void(0)" title="联系我们">联系我们</a>
+                                    <a href="javascript:void(0)" title="微信链接">微信链接</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copy">
+            Copyright 2017, Peinihua.com.All Rights Reserved 陪你画 京ICP备000000号
+        </div>
+    </div>
+</footer>
+<!--
+<div class="mc"></div>
+<div class="col-md-4 col-md-offset-4 col-xs-12 login-box">
+    <a href="javascript:;" class="close"><img src="../images/close.png" ></a>
+    <h3>您还未登陆，请 <a href="http://web1709280001.gz01.bdysite.com/member">登录</a>后操作！</h3>
+    <a href="http://web1709280001.gz01.bdysite.com/member/reg" class="a-s mt30">去注册</a>
+</div>
+-->
+<div class="tcnew">
+    <div class="showcontent">
+        <div class="l_gx">
+            <p style="color:white;font-size:16px;" class="contentshow"></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

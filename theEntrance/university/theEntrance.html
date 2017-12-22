@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>升学检索</title>
+    <meta name="keywords" content="陪你画">
+    <meta name="description" content="陪你画">
+    <link href="../../../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../../../css/common.css" rel="stylesheet">
+    <link href="../../../css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../../../css/owl.theme.default.min.css">
+    <link href="../../../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../../css/ui-select.css">
+    <link href="../../../css/no-responsive.css" rel="stylesheet">
+
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src="../../../js/jquery.min.js"></script>
+    <script src="../../../js/bootstrap.min.js"></script>
+    <script src="../../../js/jquery.actual.min.js"></script>
+    <script src="../../../js/owl.carousel.js"></script>
+    <script src="../../../js/jquery.style.js"></script>
+    <script src="../../../js/ui-select.js"></script>
+    <script src="../../../js/picturefill.min.js"></script>
+    <script language="javascript" src="../../../js/Validform_v5.js"></script>
+    <script>
+        document.createElement("picture");
+    </script>
+    <script src="../../../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body class="skin-cont">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                    data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#"><img
+                    src="../../../images/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav navbar-left">
+                <li><a href="../../index.htm">首页</a></li>
+                <li><a href="../../evaluation.html">智能测评</a></li>
+                <li><a href="../../evaluationBox/experience1.html">研学体验</a></li>
+                <li class="active"><a href="../../theEntrance/university/school1.html">升学检索</a></li>
+                <li><a href="../../theEntrance/university/theEntrance.html">升学资讯</a></li>
+                <li><a href="../../aboutUs/marketCoverage.html">关于我们</a></li>
+            </ul>
+            <div class="user-a navbar-left">
+                <a href="../../login.html"><span><img src="../../../images/img-02.png"></span>登录</a>
+                <a href="../../register.html"><span><img src="../../../images/img-03.png"></span>注册</a>
+            </div>
+        </div>
+    </div>
+</nav>
+<div class="container cont-main">
+    <div class="other-page">
+        <div class="bread-crumbs">
+            <a href='../../index.htm'>首页</a> &gt; <a
+                href='theEntrance.html'>升学检索</a> &gt; <a
+                href='school1.html'><span><span class="on">高校招简</span></span></a>
+        </div>
+        <div class="row fix">
+            <div class="col-md-3 col-sm-4 side-nav">
+                <ul>
+                    <li><a class="current" href="javascript:void(0)">高校招简</a>
+                        <div class="sub-tree" style="display:block;"><a
+                                href="school1.html">独立院校</a><a
+                                href="school2.html">双一流高校</a><a
+                                href="school3.html">普通高校</a><a
+                                href="school4.html">艺术院校</a><a
+                                href="school5.html">高职专科</a></div>
+                    </li>
+                    <li><a href="javascript:void(0)">教培搜索</a>
+                        <div class="sub-tree"><a href="school6.html">技能培训</a><a
+                                href="school7.html">学科与竞赛</a></div>
+                    </li>
+                    <li><a href="javascript:void(0)">留学与游学</a>
+                        <div class="sub-tree"><a href="school8.html">留学</a><a
+                                href="school9.html">游学</a></div>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-md-9 col-sm-8 r-cont fix">
+                <div class="r-title">
+                    高校招简
+                </div>
+                <div class="screen-box mb20 fix">
+                    <form method="get" action="theEntrance.html"
+                          class="searchform">
+                        <div class="s-1 fl">地域筛选：</div>
+                        <!-- <select class="ui-select new-sel" name="s" datatype="*" nullmsg="请选择省份！" style="width:130px" id="provice" onchange="selRegion_val();"> -->
+                        <select class="ui-select new-sel" name="s" datatype="*" nullmsg="请选择省份！" style="width:130px"
+                                id="provice">
+                            <option value="">请选择省</option>
+                            <option value='2'>北京</option>
+                            <option value='3'>天津</option>
+                            <option value='4'>河北省</option>
+                            <option value='5'>山西省</option>
+                            <option value='6'>内蒙古自治区</option>
+                            <option value='7'>辽宁省</option>
+                            <option value='8'>吉林省</option>
+                            <option value='9'>黑龙江省</option>
+                            <option value='10'>上海</option>
+                            <option value='11'>江苏省</option>
+                            <option value='12'>浙江省</option>
+                            <option value='13'>安徽省</option>
+                            <option value='14'>福建省</option>
+                            <option value='15'>江西省</option>
+                            <option value='16'>山东省</option>
+                            <option value='17'>河南省</option>
+                            <option value='18'>湖北省</option>
+                            <option value='19'>湖南省</option>
+                            <option value='20'>广东省</option>
+                            <option value='21'>广西壮族自治区</option>
+                            <option value='22'>海南省</option>
+                            <option value='23'>重庆</option>
+                            <option value='24'>四川省</option>
+                            <option value='25'>贵州省</option>
+                            <option value='26'>云南省</option>
+                            <option value='27'>西藏自治区</option>
+                            <option value='28'>陕西省</option>
+                            <option value='29'>甘肃省</option>
+                            <option value='30'>青海省</option>
+                            <option value='31'>宁夏回族自治区</option>
+                            <option value='32'>新疆维吾尔自治区</option>
+                            <option value='33'>台湾</option>
+                            <option value='34'>香港特别行政区</option>
+                            <option value='35'>澳门特别行政区</option>
+                            <option value='36'>海外</option>
+                        </select>
+                        <!--<select class="ui-select new-sel" name="c" style="width:130px" id="city" onchange="selRegion_district();">-->
+                        <select class="ui-select new-sel" name="c" style="width:130px" id="city">
+                            <option value="">请选择市</option>
+                        </select>
+                        <select class="ui-select new-sel" name="d" style="width:130px" id="district">
+                            <option value="">请选择区</option>
+                        </select>
+                        <input type="submit" value="筛选" class="s-btn fl"/>
+                    </form>
+                    <form method="get" action="theEntrance.html">
+                        <div class="s-box fix fl">
+                            <input type="text" name="q" value="" datatype="*" nullmsg="院校名称不能为空！" class="s-inp fl"
+                                   placeholder="请输入院校名称搜搜"/>
+                            <input type="submit" value="" class="s-btn-02 fl">
+                        </div>
+                    </form>
+                </div>
+                <script>
+                    $('.ui-select').ui_select();
+                </script>
+                <!--三级联动调取地区名字 start-->
+                <!--<script>-->
+                <!--function selRegion_val() {-->
+                <!--var region = $("#provice").val();-->
+                <!--$.post('http://web1709280001.gz01.bdysite.com/category/getregion', {-->
+                <!--'region_id': region,-->
+                <!--'type': 1-->
+                <!--}, function (data) {-->
+                <!--switch (data.status) {-->
+                <!--case 0 :-->
+                <!--$("#city").html(data.option);-->
+                <!--$("#city").parent().find(".ui-select-list").html(data.ui);-->
+                <!--break;-->
+                <!--case 1 :-->
+                <!--break;-->
+                <!--}-->
+                <!--}, 'json');-->
+                <!--}-->
+
+                <!--function selRegion_district() {-->
+                <!--var region = $("#city").val();-->
+                <!--$.post('http://web1709280001.gz01.bdysite.com/category/getregion', {-->
+                <!--'region_id': region,-->
+                <!--'type': 0-->
+                <!--}, function (data) {-->
+                <!--switch (data.status) {-->
+                <!--case 0 :-->
+                <!--$("#district").html(data.option);-->
+                <!--$("#district").parent().find(".ui-select-list").html(data.ui);-->
+                <!--break;-->
+                <!--case 1 :-->
+                <!--break;-->
+                <!--}-->
+                <!--}, 'json');-->
+                <!--}-->
+                <!--</script>-->
+                <!--三级联动调取地区名字 end-->
+                <script type="text/javascript">
+                    $(function () {
+                        $(".searchform").Validform({
+                            tiptype: function (msg, o, cssctl) {
+                                if (o.type == 3) {
+                                    show_comment(msg);
+                                }
+                            },
+                            //tiptype:1,
+                            //showAllError:true,
+                            //postonce:true,//开启二次提交防御
+                            //ajaxPost:true,
+                        });
+                    })
+                </script>
+                <div class="n-mod-06">
+                    <div class="row">
+                        <div class="col-md-6 box-w">
+                            <div class="box fix">
+                                <div class="row">
+                                    <div class="col-md-7 box-w">
+                                        <div class="pic"><a
+                                                href="#"
+                                                title="江苏大学"><img
+                                                src="../../../images/f8fbbda73a13c70bb74147e0e8e0ce78.png"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 box-w">
+                                        <div class="info fl">
+                                            <div class="name"><a style="color:#00b4ff"
+                                                                 href="#"
+                                                                 title="江苏大学">江苏大学</a></div>
+                                            <div class="txt"> 江苏大学坐落在风景秀丽的国家历史文化名城——江...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 box-w">
+                            <div class="box fix">
+                                <div class="row">
+                                    <div class="col-md-7 box-w">
+                                        <div class="pic"><a
+                                                href="#"
+                                                title="北京航空航天大学"><img
+                                                src="../../../images/9969b5d577d99d8d0d7dfdb94bbbc28d.jpg"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 box-w">
+                                        <div class="info fl">
+                                            <div class="name"><a style="color:#00b4ff"
+                                                                 href="#"
+                                                                 title="北京航空航天大学">北京航空航天大</a></div>
+                                            <div class="txt">北京航空航天大学（Beihang University），简称北航...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 box-w">
+                            <div class="box fix">
+                                <div class="row">
+                                    <div class="col-md-7 box-w">
+                                        <div class="pic"><a
+                                                href="#"
+                                                title="北京大学"><img
+                                                src="../../../images/c186e24770083a4a7bedc1c84f92a0ad.png"></a>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-5 box-w">
+                                        <div class="info fl">
+                                            <div class="name"><a style="color:#00b4ff"
+                                                                 href="#"
+                                                                 title="北京大学">北京大学</a></div>
+                                            <div class="txt">北京大学，简称“北大”，诞生于1898年，初名京师大学...</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+<footer>
+    <div class="container">
+        <div class="other-info">
+            <div class="row">
+                <div class="col-lg-4 col-sm-8 other-l">
+                    <div class="l-info">
+                        <div class="tel">
+                            <span>010-5715-7190</span>
+                            24小时咨询热线
+                        </div>
+                        <div class="txt">
+                            <p>客服工作时间：</p>
+                            <p class="mb5">周一至周日 9：00 -- 23：00</p>
+                            <p>地址：北京市北京经济技术开发区隆庆街18号</p>
+                        </div>
+                    </div>
+                    <div class="l-erwm"><img
+                            src="../../../images/57f7d4fc5dbdb97798185ecb179f2a34.jpg"></div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-lg-push-6 f-erwm fix">
+                    <div class="erwm-group">
+                        <div class="erwm-box">
+                            <img src="../../../images/img-62.png">
+                            <div class="img-s">
+                                <img src="../../../images/5fcec97f7667a045689ca88b0b32dd08.jpg">
+                            </div>
+                        </div>
+                        <div class="erwm-box">
+                            <img src="../../../images/img-63.png">
+                            <div class="img-s">
+                                <img src="../../../images/3cc98425fe27bd3f456f804a8906b6e4.jpg">
+                            </div>
+                        </div>
+                        <div class="erwm-box">
+                            <img src="../../../images/img-64.png">
+                            <div class="img-s">
+                                <img src="../../../images/4c6eb8525d39209a5f3779f5e3130120.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear-line fix"></div>
+                <div class="col-lg-6 col-lg-pull-2 other-r">
+                    <div class="row">
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">智能测评</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="javascript:void(0)" class="login-b" title="学业现状自检">学业现状自检</a>
+                                    <a href="javascript:void(0)" class="login-b" title="兴趣选课测量">兴趣选课测量</a>
+                                    <a href="javascript:void(0)" class="login-b" title="高校专业选择">高校专业选择</a>
+                                    <a href="javascript:void(0)" class="login-b" title="未来职业评估">未来职业评估</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">研学体验</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="../../evaluationBox/experience1.html"
+                                       title="研学营文件">研学营文件</a>
+                                    <a href="../../evaluationBox/experience2.html"
+                                       title="往期案例">往期案例</a>
+                                    <a href="#" title="学业规划培训">学业规划培训</a>
+                                    <a href="../../evaluationBox/experience4.html"
+                                       title="报名链接">报名链接</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">升学检索</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="school1.html"
+                                       title="高校招简">高校招简</a>
+                                    <a href="theEntrance.html"
+                                       title="教培搜索">教培搜索</a>
+                                    <a href="school8.html" title="留学与游学">留学与游学</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">升学资讯</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="../../consultation/consultation1.html" title="新高考.新资讯">新高考.新资</a>
+                                    <a href="../../consultation/consultation2.html" title="中学生升学竞赛培优">中学生升学竞</a>
+                                    <a href="../../consultation/consultation3.html" title="中学生社会实践活动">中学生社会实</a>
+                                    <a href="../../consultation/consultation4.html"
+                                       title="科技时代职业发展变化">科技时代职业</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">关于我们</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="../../aboutUs/marketCoverage.html"
+                                       title="市场覆盖">市场覆盖</a>
+                                    <a href="../../aboutUs/enterpriseIntroduction.html"
+                                       title="企业简介">企业简介</a>
+                                    <a href="../../aboutUs/contactUs.html"
+                                       title="联系我们">联系我们</a>
+                                    <a href="../../aboutUs/weChat.html"
+                                       title="微信链接">微信链接</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copy">
+            Copyright 2017, Peinihua.com.All Rights Reserved 陪你画 京ICP备000000号
+        </div>
+    </div>
+</footer>
+<!--
+<div class="mc"></div>
+<div class="col-md-4 col-md-offset-4 col-xs-12 login-box">
+    <a href="javascript:;" class="close"><img src="../images/close.png" ></a>
+    <h3>您还未登陆，请 <a href="http://web1709280001.gz01.bdysite.com/member">登录</a>后操作！</h3>
+    <a href="http://web1709280001.gz01.bdysite.com/member/reg" class="a-s mt30">去注册</a>
+</div>
+-->
+<div class="tcnew">
+    <div class="showcontent">
+        <div class="l_gx">
+            <p style="color:white;font-size:16px;" class="contentshow"></p>
+        </div>
+    </div>
+</div>
+</body>
+</html>
+

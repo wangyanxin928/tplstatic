@@ -1,0 +1,82 @@
+@charset "UTF-8";
+/*报告结果 start*/
+#reportResult{background: #f6f6f6;padding-bottom: 10rem;}
+#reportResult .content{max-width: 1000px;margin: auto;position: relative;}
+#reportResult .section {  background-color: #FFFFFF;  height: auto;  padding: 10px 10px;  overflow: auto;}
+.reportSection{clear: both;overflow: auto;width: 100%;}
+.reportResultLogo{ float: right; width: 50px;height: 50px;background-repeat: no-repeat;background-size: 100% 100%;}
+.reportTitle {  clear: both;  color: #009cff;  font-size: 20px;  line-height: 30px; margin-top: 10px; }
+.reportTitle .icon1{display: inline-block;width: 6px;height:30px;background-color:#009cff;position: relative;top: 6px;margin-right: 10px; }
+/* 添加样式 by 文霞 20171206*/
+#reportResult table{width: 100%;margin-top: 15px;}
+/*.reportSubtitle,.reportTable,.verticalTable2,.verticalTable3,.analysisBox,.auxiliaryText,.reportTable2{margin-top: 15px;}*/
+
+.reportSubtitle{font-weight: 600;font-size: 16px;text-indent: 2em;}
+.reportSubtitle2{font-weight: 600;font-size: 16px;}
+.auxiliaryText{font-size: 14px;color: #999999; }
+
+.reportTable {text-align: center;}
+.reportTable  thead tr th{font-size: 18px;font-weight: 600;color: #444;padding: 20px;text-align: center;white-space: nowrap; border: 1px solid #dddddd; }
+.reportTable  thead tr th p{font-size: 30px;font-weight: 300;color: #999;padding:20px 15px;text-align: center;white-space: nowrap; }
+.reportTable  table tbody tr:nth-child(odd){background:#F4F4F4;}
+.reportTable  tbody tr td{font-size: 16px;color: #555;padding: 8px;text-align: center;border: 1px solid #dddddd; }
+
+.reportTable2 {text-align: left;}
+.reportTable2  thead tr th{font-size: 18px;font-weight: 600;color: #555;padding: 10px;text-align: center;white-space: nowrap; border: 1px solid #dddddd; }
+.reportTable2  tbody tr td{font-size: 14px;color: #555;padding: 15px;text-align: left;border: 1px solid #dddddd; }
+
+
+
+.reportCanvas1{height: 20rem;  width: 100%;margin-top: 15px;}
+
+.analysisBox{clear: both;width: 100%;}
+.canvasBox1{width: 38%;height: 235px;float: left;margin-right: 2%;}
+@media screen and (max-width: 420px) {
+    .canvasBox1{width: 100%;height: 4rem;float: left;}
+}
+.smallTable{width: 60%; float:left;text-align: center;}
+.smallTable table thead tr th{font-size: 16px;font-weight: 600;color: #444;padding: 8px;text-align: center;white-space: nowrap; border: 1px solid #dddddd; }
+.smallTable table tbody tr td{font-size: 14px;color: #555;padding: 8px;text-align: center;white-space: nowrap; border: 1px solid #dddddd; }
+.smallTable  table tbody tr:nth-child(odd){background:#F4F4F4;}
+
+
+.verticalTable{float: left; width: 28%;}
+.verticalTable table, .verticalTable table tbody{width: 100%;height: 100%;}
+.verticalTable table tbody tr td{font-size: 14px;color: #555;padding: 10px;text-align: center;white-space: nowrap; border: 1px solid #dddddd; width: 50%;}
+.verticalTable table tbody tr td:first-child {font-size: 17px;font-weight: 600;color: #444;padding: 10px;text-align: center;white-space: nowrap; border: 1px solid #dddddd;width: 60%; }
+.canvasBox2{width: 70%;height: 322px; float: left;}
+
+
+.verticalTable2{float: left; width: 100%;}
+.verticalTable2 table thead tr th{font-size: 16px; font-weight: 600;color: #444;padding: 10px;text-align: center;white-space: nowrap; border: 1px solid #dddddd; }
+.verticalTable2 table tbody tr td{font-size: 14px;color: #555;padding: 8px;text-align: left; border: 1px solid #dddddd; word-break: break-all;}
+.verticalTableFirstChild {font-size: 16px;font-weight: 600;color: #555;padding: 8px;text-align: center;white-space: nowrap; border: 1px solid #dddddd;}
+.verticalTable2  table tbody tr:nth-child(odd){background:#F4F4F4;}
+
+.verticalTable3{float: left; width: 100%;}
+.verticalTable3 table thead tr th{font-size: 16px; font-weight: 600;color: #444;padding: 10px;text-align: center;white-space: nowrap; border: 1px solid #dddddd; }
+.verticalTable3 table tbody tr td{font-size: 14px;color: #555;padding: 8px;text-align: center; border: 1px solid #dddddd; word-break: break-all;}
+.verticalTableFirstChild {font-size: 16px;font-weight: 600;color: #555;padding: 8px;text-align: center;white-space: nowrap; border: 1px solid #dddddd;}
+.verticalTable3  table tbody tr:nth-child(odd){background:#F4F4F4;}
+
+
+.canvasBox3{width: 40%;height: 320px; float: left;}
+.canvasBox4{width: 58%;  margin-left: 2%;height: 320px; float: left;}
+
+
+/*学科排名 start*/
+.RecomDisciplines{width: 660px;margin: auto;position: relative;overflow: auto ;padding-top: 40px;clear: both;}
+.RecomDisciplines .disciplines{width: 220px;float: left;text-align: center;}
+.RecomDisciplines .disciplines .disciplinesImg{width: 150px;  height: 150px;border-radius: 50%;margin: auto;position: relative;top: 30px;z-index: 10;}
+.RecomDisciplines .disciplines .disciplinesImg img{width: 100%;height: 100%;border-radius: 50%;margin: auto;}
+.RecomDisciplines .disciplinesOne{position: relative;top: -40px;}
+.RecomDisciplines .disciplines .rankingImg{width: 100%;}
+.RecomDisciplines .disciplines .rankingImg img{width: 100%;position: relative;z-index: 20;}
+
+.RecomDisciplines .disciplines .disciplinesTitle{font-size: 18px;  font-weight: 600;  color: #444;}
+
+/*学科排名 end*/
+
+.text-denger{color: #ff2a0c;}
+/*报告结果 end*/
+

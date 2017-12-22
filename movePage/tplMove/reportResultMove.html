@@ -1,0 +1,1108 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>报告结果页move</title>
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="format-detection" content="telephone=no">
+    <!--<link rel="shortcut icon" type="image/x-ico" href="images/favicon.ico">-->
+    <!--<link rel="shortcut icon" type="image/x-ico" href="images/favicon_1.ico">-->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/commonMove.css">
+    <link rel="stylesheet" href="../css/reportResultMove.css">
+</head>
+<body>
+<div class="allSection">
+    <div class="publicHead">报告结果</div>
+    <div id="reportResult">
+        <div class="content">
+            <div class="section">
+                <!-- <div class="reportResultLogo"></div>-->
+                <div class="reportSection">
+                    <div class="reportTitle">
+                        <i class="icon1"></i><span>基本情况</span>
+                    </div>
+                    <div class="verticalTable2">
+                        <table>
+                            <thead>
+                            <tr>
+                                <th colspan="2" width="100">学生信息</th>
+                            </tr>
+
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td  width="400">学生姓名</td>
+                                <td  width="400" id="usertruename" name="usertruename">赵天鸣</td>
+                            </tr>
+                            <tr>
+                                <td>学校名称</td>
+                                <td id="schoolname" name="schoolname">清华附中</td>
+                            </tr>
+                            <tr>
+                                <td>性别</td>
+                                <td id="sex">女</td>
+                            </tr>
+                            <tr>
+                                <td>年级与班级</td>
+                                <td id="classInfo">高二1班</td>
+                            </tr>
+                            <tr>
+                                <td>身份证号</td>
+                                <td id="cardNumber">411424198811178987</td>
+                            </tr>
+                            <tr>
+                                <td>手机号</td>
+                                <td id="phone">18911317897</td>
+                            </tr>
+                            <tr>
+                                <td>家长姓名</td>
+                                <td id="paruserName">bainiu</td>
+                            </tr>
+                            <tr>
+                                <td>家长联系方式</td>
+                                <td id="parphone">18710010102</td>
+                            </tr>
+                            <tr>
+                                <td >QQ 号</td>
+                                <td class="width13" id="QQ">1065321878</td>
+                            </tr>
+                            <tr>
+                                <td class="width12">微信号</td>
+                                <td  id="wechatNumber">bai1103</td>
+                            </tr>
+                            <tr>
+                                <td class="width12">Email</td>
+                                <td class="width13" id="email">1065321878@qq.com</td>
+                            </tr>
+                            </tbody>
+                        </table>
+                        <table>
+                            <thead>
+                            <tr>
+                                <th colspan="2" >学生受教育经历</th>
+                            </tr>
+                            </thead>
+                            <tbody>
+                            <tr>
+                                <td  width="400" >学前:幼儿园名称</td>
+                                <td  width="400" data-recordtype="幼儿园" class="edu_schoolName">天使幼儿园</td>
+                            <tr>
+                                <td >学过哪些特长</td>
+                                <td data-recordtype="幼儿园" class="learned_specialty">绘画、唱歌</td>
+                            </tr>
+                            <tr>
+                                <td >参与的社会活动</td>
+                                <td data-recordtype="幼儿园" class="part_activities">看望孤寡老人</td>
+                            </tr>
+                            <tr>
+                                <td >喜欢哪类特长</td>
+                                <td data-recordtype="幼儿园" class="like_specialty">绘画、跳舞</td>
+                            </tr>
+                            <tr>
+                                <td >获奖信息</td>
+                                <td data-recordtype="幼儿园" class="award_name">三好学生</td>
+                            </tr>
+                            <tr>
+                                <td>小学:学校名称</td>
+                                <td data-recordtype="小学" class="edu_schoolName">清华附小</td>
+                            <tr>
+                                <td>学习状况</td>
+                                <td data-recordtype="小学" class="learn_situation">三好</td>
+                            </tr>
+                            <tr>
+                                <td>担任职务</td>
+                                <td data-recordtype="小学" class="duties">班长</td>
+                            </tr>
+                            <tr>
+                                <td>课外学过特长班</td>
+                                <td data-recordtype="小学" class="learned_specialty">绘画</td>
+                            </tr>
+                            <tr>
+                                <td>获奖信息</td>
+                                <td data-recordtype="小学" class="award_name">三好学生</td>
+                            </tr>
+                            <tr>
+                                <td>初中:学校名称</td>
+                                <td data-recordtype="初中" class="edu_schoolName">清华附中</td>
+                            </tr>
+                            <tr>
+                                <td>成绩情况</td>
+                                <td data-recordtype="初中" class="grade_ratio">年级前50</td>
+                            </tr>
+                            <tr>
+                                <td>担任职务</td>
+                                <td data-recordtype="初中" class="duties">班长</td>
+                            </tr>
+                            <tr>
+                                <td>课外学过特长班</td>
+                                <td data-recordtype="初中" class="learned_specialty">长笛</td>
+                            </tr>
+                            <tr style="display: none;">
+                                <td>小升初成绩</td>
+                                <td data-recordtype="初中" class="enterschool_score"></td>
+                            </tr>
+                            <tr style="display: none;">
+                                <td>小升初区片排名</td>
+                                <td data-recordtype="初中" class="enterschool_rank"></td>
+                            </tr>
+                            <tr>
+                                <td>获奖信息</td>
+                                <td data-recordtype="初中" class="award_name"></td>
+                            </tr>
+                            <tr>
+                                <td>高中:学校名称</td>
+                                <td data-recordtype="高中" class="edu_schoolName">二高</td>
+                            </tr>
+                            <tr>
+                                <td>参与的社会活动</td>
+                                <td data-recordtype="高中" class="part_activities">赈灾</td>
+                            </tr>
+                            <tr>
+                                <td>担任职务</td>
+                                <td data-recordtype="高中" class="duties">学习委员</td>
+                            </tr>
+                            <tr>
+                                <td>有哪些爱好和特长</td>
+                                <td data-recordtype="高中" class="like_specialty">学习</td>
+                            </tr>
+                            <tr style="display: none;">
+                                <td>中考成绩</td>
+                                <td data-recordtype="高中" class="enterschool_score"></td>
+                            </tr>
+                            <tr style="display: none;">
+                                <td>中考区片排名</td>
+                                <td data-recordtype="高中" class="enterschool_rank"></td>
+                            </tr>
+                            <tr>
+                                <td>获奖信息</td>
+                                <td data-recordtype="高中" class="award_name">优秀班干部</td>
+                            </tr>
+                            </tbody>
+                        </table>
+
+
+                    </div>
+                </div>
+
+
+                <div class="reportSection">
+                    <div class="reportTitle">
+                        <i class="icon1"></i><span>霍兰德——职业兴趣测量表统计结果</span>
+                    </div>
+                    <div class="reportTable2 " style="display: none;">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <p class="reportSubtitle2">您没有填报本问卷，无法展示分析结果，请您测评后查看结果。</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="Holland_reportContent">
+                        <div class="reportTable2 ">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td width="800">
+                                        <p class="reportSubtitle2">您的测试结果是<span style="color: #009cff;"
+                                                                                id="Holland_result">SCR、SRC、CSR、CRS、RSC、RCS</span>。
+                                        </p>
+                                        <p class="textIndent" id="Holland_comment"></p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="reportTable2 ">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td width="800">
+                                        <p class="reportSubtitle2">测试结果匹配的职业为：</p>
+                                        <div class="textIndent" id="Holland_proposal"><p><span style="color:#009cff; ">SRC：</span><br>  护理员、护理助理、医院勤杂工、理发师、学校儿童服务人员。
+                                        </p>
+                                            <p><span style="color:#009cff; ">CSR：</span><br>  运货代理商、铁路职员、交通检查员、办公室通信员、薄记员、出纳员、银行财务职员。</p>
+                                            <p><span style="color:#009cff; ">CRS：</span><br>  仓库保管员、档案管理员、缝纫工、讲述员、收款人。</p>
+                                            <p><span style="color:#009cff; ">RCS：</span><br>  公共汽车驾驶员、一等水手、游泳池服务员、裁缝、建筑工作、石匠、烟囱修建工、混凝土工、电话修理工、爆炸手、邮递员、矿工、裱糊工人、纺纱工。
+                                            </p>
+                                            <p><span style="color:#009cff; ">RSC、SCR：</span><br>  霍兰德认为，有一些职业指向标识是互相矛盾的，这些代码所表明的职业趣向是不明确的，故不能给出职业建议。<br>  霍兰德认为，相邻关系：RI
+                                                IR IA AI AS SA SE ES EC CE RC CR，两种类型的个体间共同点较多。 职业契合点也非常多。<br>  相隔关系：RA
+                                                RE IC IS AR AE SI SC EA ER CI CS相隔关系两种类型个体之间共同点比相邻关系较少。职业契合度较低。<br>  相对关系：RS
+                                                IE AC SR EI CA，相对关系人格类型共同点少，一个人同时对处于相对关系的两种职业环境都兴趣很浓的情况较为少见，甚至是不可能。<br>  例如：ACR中的AC属于相对关系，较为少见，相对应的职业也很少。所以ACR、CAE都没有。
+                                            </p></div>
+                                        <!--<p class="textIndent" id="Holland_proposal"></p>-->
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background: #f3f3f3;">
+                            <div class="reportCanvas1" id="Holland_radarChart" _echarts_instance_="ec_1513741186760" style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;">
+
+                                <div style="position: absolute; display: none; border-style: solid; white-space: nowrap; z-index: 9999999; transition: left 0.4s cubic-bezier(0.23, 1, 0.32, 1), top 0.4s cubic-bezier(0.23, 1, 0.32, 1); background-color: rgba(50, 50, 50, 0.7); border-width: 0px; border-color: rgb(51, 51, 51); border-radius: 4px; color: rgb(255, 255, 255); font-style: normal; font-variant: normal; font-weight: normal; font-stretch: normal; font-size: 14px; font-family: sans-serif; line-height: 21px; padding: 5px; left: 576px; top: 220px;">
+                                    职业趣向测试结果<br>R : 7<br>C : 7<br>E : 6<br>S : 7<br>A : 6<br>I : 6
+                                </div>
+                            </div>
+                        </div>
+                        <div class="verticalTable3">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th colspan="10" width="800">霍兰德职业趣向测评结果</th>
+                                </tr>
+                                </thead>
+                                <tbody id="Holland_scoreResultTbody">
+                                <tr>
+                                    <td>I</td>
+                                    <td>A</td>
+                                    <td>S</td>
+                                    <td>E</td>
+                                    <td>C</td>
+                                    <td>R</td>
+                                </tr>
+                                <tr>
+                                    <td>6</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>6</td>
+                                    <td>7</td>
+                                    <td>7</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+
+
+
+                        <div class="verticalTable3">
+                            <div class="reportTitle">
+                                <i class="icon1"></i><span>霍兰德职业趣向各项结果说明</span>
+                            </div>
+                            <div class="reportTable2 ">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th colspan="4" width="1000">现实型（技能型）</th>
+                                </tr>
+                                <tr>
+                                    <th width="200">字母</th>
+                                    <th width="200">R</th>
+                                    <th width="200">代码</th>
+                                    <th width="200">Realistic</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>人格特征</td>
+                                    <td colspan="3">安分随流，直率坦诚，实事求是，循规蹈矩，坚忍不拔，勤劳节俭。</td>
+                                </tr>
+                                <tr>
+                                    <td>描述</td>
+                                    <td colspan="3">
+                                        动手能力强，喜欢和机器、工具打交道，喜欢实际操作，做事喜欢军训一定的规则。做人现实，非理想主义者。追求安定舒适的生活。通常表达能力不强，不善与人交际，思想比较保守，对新鲜事物不太感兴趣，情感体验也不太丰富，生活缺少情趣。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>职业特征</td>
+                                    <td colspan="3">需要有明确具体的分工，有一定程序要求的技术型、技能型工作。如工程技术类工作。</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                            </div>
+                        </div>
+
+                        <div class="verticalTable3">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th colspan="4" width="1000">社会型</th>
+                                </tr>
+                                <tr>
+                                    <th width="200">字母</th>
+                                    <th width="200">S</th>
+                                    <th width="200">代码</th>
+                                    <th width="200">Social</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>人格特征</td>
+                                    <td colspan="3">社会责任感和人道主义倾向。</td>
+                                </tr>
+                                <tr>
+                                    <td>描述</td>
+                                    <td colspan="3">善于和周围的人打交道，喜欢周围有别人存在。喜欢和人打交道。助人为乐，有责任心，热情，开朗，友好，善良，易于合作。</td>
+                                </tr>
+                                <tr>
+                                    <td>职业特征</td>
+                                    <td colspan="3">教师，护士，导游，社会活动家和心理工作者。</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="verticalTable3">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th colspan="4" width="1000">常规型（事务型）</th>
+                                </tr>
+                                <tr>
+                                    <th width="200">字母</th>
+                                    <th width="200">C</th>
+                                    <th width="200">代码</th>
+                                    <th width="200">Conventional</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+                                <tr>
+                                    <td>人格特征</td>
+                                    <td colspan="3">喜欢秩序和安稳。</td>
+                                </tr>
+                                <tr>
+                                    <td>描述</td>
+                                    <td colspan="3">
+                                        做事有计划，乐于执行上级派下来的任务，讲求精确，不愿意冒险。想象力和创造力弱。循规蹈矩，他是稳当，忠实可靠，顺从听话。对需要花费大量体力和脑力的活动不感兴趣。
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <td>职业特征</td>
+                                    <td colspan="3">会计，图书管理员，办公室职员，打字员。</td>
+                                </tr>
+
+                                </tbody>
+                            </table>
+                        </div>
+
+
+                        <div class="verticalTable3">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th colspan="5" width="800">问卷填写结果</th>
+                                </tr>
+                                </thead>
+                                <tbody id="Holland_selectResultTbody">
+                                <tr>
+                                    <td>1.A</td>
+                                    <td>2.A</td>
+                                    <td>3.A</td>
+                                    <td>4.A</td>
+                                    <td>5.B</td>
+                                </tr>
+                                <tr>
+                                    <td>6.A</td>
+                                    <td>7.A</td>
+                                    <td>8.A</td>
+                                    <td>9.A</td>
+                                    <td>10.A</td>
+                                </tr>
+                                <tr>
+                                    <td>11.B</td>
+                                    <td>12.B</td>
+                                    <td>13.B</td>
+                                    <td>14.A</td>
+                                    <td>15.A</td>
+                                </tr>
+                                <tr>
+                                    <td>16.B</td>
+                                    <td>17.A</td>
+                                    <td>18.B</td>
+                                    <td>19.A</td>
+                                    <td>20.B</td>
+                                </tr>
+                                <tr>
+                                    <td>21.A</td>
+                                    <td>22.B</td>
+                                    <td>23.A</td>
+                                    <td>24.A</td>
+                                    <td>25.A</td>
+                                </tr>
+                                <tr>
+                                    <td>26.B</td>
+                                    <td>27.A</td>
+                                    <td>28.B</td>
+                                    <td>29.A</td>
+                                    <td>30.B</td>
+                                </tr>
+                                <tr>
+                                    <td>31.A</td>
+                                    <td>32.B</td>
+                                    <td>33.A</td>
+                                    <td>34.B</td>
+                                    <td>35.B</td>
+                                </tr>
+                                <tr>
+                                    <td>36.B</td>
+                                    <td>37.A</td>
+                                    <td>38.B</td>
+                                    <td>39.A</td>
+                                    <td>40.A</td>
+                                </tr>
+                                <tr>
+                                    <td>41.B</td>
+                                    <td>42.A</td>
+                                    <td>43.A</td>
+                                    <td>44.A</td>
+                                    <td>45.A</td>
+                                </tr>
+                                <tr>
+                                    <td>46.A</td>
+                                    <td>47.A</td>
+                                    <td>48.A</td>
+                                    <td>49.A</td>
+                                    <td>50.B</td>
+                                </tr>
+                                <tr>
+                                    <td>51.A</td>
+                                    <td>52.B</td>
+                                    <td>53.A</td>
+                                    <td>54.B</td>
+                                    <td>55.A</td>
+                                </tr>
+                                <tr>
+                                    <td>56.B</td>
+                                    <td>57.A</td>
+                                    <td>58.B</td>
+                                    <td>59.A</td>
+                                    <td>60.A</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--<div>
+                        雷达图，6个指标的雷达图
+                    </div>
+                    <div>
+                        评语及建议
+                    </div>-->
+                </div>
+                <div class="reportSection">
+                    <div class="reportTitle">
+                        <i class="icon1"></i><span>学生学业兴趣、学业水平和学业能力调查与测评统计结果</span>
+                    </div>
+                    <div class="reportTable3 " style="display: none;">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <p class="reportSubtitle2">您没有填报本问卷，无法展示分析结果，请您测评后查看结果。</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="XYXQ_reportContent" style="">
+                        <div class="reportTable2 ">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td width="800">
+                                        <p class="reportSubtitle2">您的总得分是<span style="color: #009cff;" id="XYXQ_result">485</span>。
+                                        </p>
+                                        <p class="textIndent" id="XYXQ_comment">
+                                            对知识充满渴求，各学科有一整套学习方法，大部分测试都会名列前茅，是一位优等生骄傲的资本。你的任务不在学习战略上，而需要关注细节。恐怕减少失误率是你更上一层楼的重要任务</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="reportTable2 ">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td width="800">
+                                        <p class="reportSubtitle2">我们给您的建议是：</p>
+                                        <div class="textIndent" id="XYXQ_proposal"><p>
+                                            从众多你喜欢的科目中，选出你真正感兴趣的领域，并最终聚焦在未来高考志愿专业上面。我们提供了一个完整的专业数据库，你可以参考自己各学科的学业兴趣、学业能力和学业水平在里面寻找一下你心仪的专业。</p>
+                                        </div>
+                                        <!--<p class="textIndent" id="Holland_proposal"></p>-->
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div style="background: #f3f3f3;">
+                            <div class="reportCanvas1" id="XYXQ_barChart" _echarts_instance_="ec_1513741186761"
+                                 style="-webkit-tap-highlight-color: transparent; user-select: none; position: relative; background: transparent;">
+
+                                <div></div>
+                            </div>
+                        </div>
+                        <div class="reportTable2 ">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td width="800">
+                                        <p class="reportSubtitle2">除语数外三科，其他科目按照得分由高到低排序如下：</p>
+                                        <p class="textIndent" id="XYXQ_coment">
+                                            1、化学2、技术3、综合素养4、生物5、物理6、历史7、地理8、经管9、政治</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="verticalTable3">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th colspan="5" width="800">综合学业评估分数</th>
+                                </tr>
+                                <tr>
+                                    <th>统计</th>
+                                    <th>兴趣</th>
+                                    <th>能力</th>
+                                    <th>水平</th>
+                                    <th>小计</th>
+                                </tr>
+                                </thead>
+                                <tbody id="XYXQ_scoreResultTbody">
+                                <tr>
+                                    <td>语文</td>
+                                    <td>13</td>
+                                    <td>8</td>
+                                    <td>11</td>
+                                    <td>32</td>
+                                </tr>
+                                <tr>
+                                    <td>数学</td>
+                                    <td>18</td>
+                                    <td>12</td>
+                                    <td>13</td>
+                                    <td>43</td>
+                                </tr>
+                                <tr>
+                                    <td>外语</td>
+                                    <td>12</td>
+                                    <td>10</td>
+                                    <td>12</td>
+                                    <td>34</td>
+                                </tr>
+                                <tr>
+                                    <td>物理</td>
+                                    <td>15</td>
+                                    <td>14</td>
+                                    <td>14</td>
+                                    <td>43</td>
+                                </tr>
+                                <tr>
+                                    <td>化学</td>
+                                    <td>20</td>
+                                    <td>15</td>
+                                    <td>15</td>
+                                    <td>50</td>
+                                </tr>
+                                <tr>
+                                    <td>生物</td>
+                                    <td>19</td>
+                                    <td>14</td>
+                                    <td>11</td>
+                                    <td>44</td>
+                                </tr>
+                                <tr>
+                                    <td>历史</td>
+                                    <td>18</td>
+                                    <td>8</td>
+                                    <td>12</td>
+                                    <td>38</td>
+                                </tr>
+                                <tr>
+                                    <td>地理</td>
+                                    <td>16</td>
+                                    <td>10</td>
+                                    <td>12</td>
+                                    <td>38</td>
+                                </tr>
+                                <tr>
+                                    <td>政治</td>
+                                    <td>11</td>
+                                    <td>12</td>
+                                    <td>11</td>
+                                    <td>34</td>
+                                </tr>
+                                <tr>
+                                    <td>技术</td>
+                                    <td>19</td>
+                                    <td>13</td>
+                                    <td>15</td>
+                                    <td>47</td>
+                                </tr>
+                                <tr>
+                                    <td>综合素养</td>
+                                    <td>18</td>
+                                    <td>14</td>
+                                    <td>15</td>
+                                    <td>47</td>
+                                </tr>
+                                <tr>
+                                    <td>经管</td>
+                                    <td>15</td>
+                                    <td>13</td>
+                                    <td>7</td>
+                                    <td>35</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="verticalTable3">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th colspan="10" width="800">问卷填写结果</th>
+                                </tr>
+                                </thead>
+                                <tbody id="XYXQ_selectResultTbody">
+                                <tr>
+                                    <td>1.B</td>
+                                    <td>2.A</td>
+                                    <td>3.B</td>
+                                    <td>4.B</td>
+                                    <td>5.A</td>
+                                </tr>
+                                <tr>
+                                    <td>6.A</td>
+                                    <td>7.A</td>
+                                    <td>8.B</td>
+                                    <td>9.D</td>
+                                    <td>10.A</td>
+                                </tr>
+                                <tr>
+                                    <td>11.B</td>
+                                    <td>12.C</td>
+                                    <td>13.D</td>
+                                    <td>14.A</td>
+                                    <td>15.C</td>
+                                </tr>
+                                <tr>
+                                    <td>16.A</td>
+                                    <td>17.C</td>
+                                    <td>18.C</td>
+                                    <td>19.D</td>
+                                    <td>20.B</td>
+                                </tr>
+                                <tr>
+                                    <td>21.B</td>
+                                    <td>22.C</td>
+                                    <td>23.A</td>
+                                    <td>24.A</td>
+                                    <td>25.A</td>
+                                </tr>
+                                <tr>
+                                    <td>26.A</td>
+                                    <td>27.A</td>
+                                    <td>28.B</td>
+                                    <td>29.A</td>
+                                    <td>30.B</td>
+                                </tr>
+                                <tr>
+                                    <td>31.B</td>
+                                    <td>32.B</td>
+                                    <td>33.C</td>
+                                    <td>34.A</td>
+                                    <td>35.C</td>
+                                </tr>
+                                <tr>
+                                    <td>36.D</td>
+                                    <td>37.B</td>
+                                    <td>38.A</td>
+                                    <td>39.B</td>
+                                    <td>40.A</td>
+                                </tr>
+                                <tr>
+                                    <td>41.C</td>
+                                    <td>42.A</td>
+                                    <td>43.A</td>
+                                    <td>44.D</td>
+                                    <td>45.A</td>
+                                </tr>
+                                <tr>
+                                    <td>46.B</td>
+                                    <td>47.B</td>
+                                    <td>48.A</td>
+                                    <td>49.C</td>
+                                    <td>50.D</td>
+                                </tr>
+                                <tr>
+                                    <td>51.C</td>
+                                    <td>52.B</td>
+                                    <td>53.C</td>
+                                    <td>54.A</td>
+                                    <td>55.C</td>
+                                </tr>
+                                <tr>
+                                    <td>56.A</td>
+                                    <td>57.D</td>
+                                    <td>58.A</td>
+                                    <td>59.B</td>
+                                    <td>60.A</td>
+                                </tr>
+                                <tr>
+                                    <td>61.A</td>
+                                    <td>62.A</td>
+                                    <td>63.A</td>
+                                    <td>64.A</td>
+                                    <td>65.A</td>
+                                </tr>
+                                <tr>
+                                    <td>66.B</td>
+                                    <td>67.B</td>
+                                    <td>68.D</td>
+                                    <td>69.D</td>
+                                    <td>70.C</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--<div>
+                        柱状图，层叠的柱状图，x轴是各个学科，每个学科上是 兴趣、能力、水平三种小指标的叠加
+                    </div>
+                    <div>
+                        评语及建议
+                    </div>-->
+                </div>
+
+
+
+                <div class="reportSection">
+                    <div class="reportTitle">
+                        <i class="icon1"></i><span>批判性逻辑思维水平测试统计结果</span>
+                    </div>
+                    <div class="reportTable2 " style="display: none;">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <p class="reportSubtitle2">您没有填报本问卷，无法展示分析结果，请您测评后查看结果。</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="PPSW_reportContent" style="">
+                        <div class="reportTable2 ">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td>
+                                        <p class="reportSubtitle2">您的得分是：<span style="color: #009cff;"
+                                                                               id="PPSW_result1">12</span>，百分位：<span
+                                                style="color: #009cff;" id="PPSW_result2">28.57%</span></p>
+                                        <p class="textIndent" id="PPSW_comment">说明被试的批判性思维能力很差。推理缺乏条理性。也可能有语言理解偏差。</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="verticalTable3">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th colspan="10" width="800">问卷填写结果</th>
+                                </tr>
+                                </thead>
+                                <tbody id="PPSW_selectResultTbody">
+                                <tr>
+                                    <td>1.D</td>
+                                    <td>2.B</td>
+                                    <td>3.B</td>
+                                    <td>4.B</td>
+                                    <td>5.E</td>
+
+                                </tr>
+                                <tr>
+                                    <td>6.B</td>
+                                    <td>7.C</td>
+                                    <td>8.B</td>
+                                    <td>9.B</td>
+                                    <td>10.B</td>
+                                </tr>
+                                <tr>
+                                    <td>11.C</td>
+                                    <td>12.C</td>
+                                    <td>13.C</td>
+                                    <td>14.D</td>
+                                    <td>15.B</td>
+                                </tr>
+                                <tr>
+
+                                    <td>16.D</td>
+                                    <td>17.C</td>
+                                    <td>18.B</td>
+                                    <td>19.C</td>
+                                    <td>20.B</td>
+                                </tr>
+                                <tr>
+                                    <td>21.C</td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+                <div class="reportSection">
+                    <div class="reportTitle">
+                        <i class="icon1"></i><span>MBTI——职业性格测试量表统计结果</span>
+                    </div>
+                    <div class="reportTable2 " style="display: none;">
+                        <table>
+                            <tbody>
+                            <tr>
+                                <td>
+                                    <p class="reportSubtitle2">您没有填报本问卷，无法展示分析结果，请您测评后查看结果。</p>
+                                </td>
+                            </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                    <div id="MBTI_reportContent" style="">
+                        <div class="reportTable2 ">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td width="800">
+                                        <p class="reportSubtitle2">您的测试结果是<span style="color: #009cff;"
+                                                                                id="MBTI_result">ISFP</span>。</p>
+                                        <p class="textIndent" id="MBTI_comment">ISFP为艺术家型人格， 具有以下特征：1.
+                                            羞怯的、安宁和善地、敏感的、亲切的、且行事谦虚。2. 喜于避开争论，不对他人强加已见或价值观。3. 无意于领导却常是忠诚的追随者。4.
+                                            办事不急躁，安于现状无意于以过度的急切或努力破坏现况，且非成果导向。5. 喜欢有自由的空间及照自订的时程办事。<br>  ISFP友好谦逊，感情投入；关心熟人，并能真挚的对待；对批评很敏感，容易受伤；温柔文静，谈吐文雅；很现实，但平易近人沉静，友善，敏感和仁慈。欣赏目前和他们周遭所发生的事情。喜欢有自己的空间，做事又能把握自己的时间。忠于自己的价值观，忠于自己所重视的人。不喜欢争论和冲突，不会强迫别人接受自己的意见或价值观。
+                                        </p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="reportTable2 ">
+                            <table>
+                                <tbody>
+                                <tr>
+                                    <td width="800">
+                                        <p class="reportSubtitle2">常见适合职业举例：</p>
+                                        <p class="textIndent" id="MBTI_proposal">
+                                            室内装潢设计师、按摩师、客户服务专员、服装设计师、厨师、护士、牙医、旅游管理。</p>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="verticalTable3">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th colspan="10" width="800">MBTI——职业性格测试结果</th>
+                                </tr>
+                                </thead>
+                                <tbody id="MBTI_scoreResultTbody">
+                                <tr>
+                                    <td>E</td>
+                                    <td>I</td>
+                                    <td>S</td>
+                                    <td>N</td>
+                                </tr>
+                                <tr>
+                                    <td>3</td>
+                                    <td>18</td>
+                                    <td>14</td>
+                                    <td>12</td>
+                                </tr>
+                                <tr>
+                                    <td>T</td>
+                                    <td>F</td>
+                                    <td>J</td>
+                                    <td>P</td>
+                                </tr>
+                                <tr>
+                                    <td>9</td>
+                                    <td>15</td>
+                                    <td>4</td>
+                                    <td>18</td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="verticalTable3">
+                            <table>
+                                <thead>
+                                <tr>
+                                    <th colspan="10" width="800">问卷填写结果</th>
+                                </tr>
+                                </thead>
+                                <tbody id="MBTI_selectResultTbody">
+                                <tr>
+                                    <td>1.B</td>
+                                    <td>2.A</td>
+                                    <td>3.A</td>
+                                    <td>4.B</td>
+                                    <td>5.A</td>
+                                </tr>
+                                <tr>
+                                    <td>6.A</td>
+                                    <td>7.A</td>
+                                    <td>8.B</td>
+                                    <td>9.B</td>
+                                    <td>10.A</td>
+                                </tr>
+                                <tr>
+                                    <td>11.A</td>
+                                    <td>12.B</td>
+                                    <td>13.B</td>
+                                    <td>14.B</td>
+                                    <td>15.A</td>
+                                </tr>
+                                <tr>
+                                    <td>16.A</td>
+                                    <td>17.A</td>
+                                    <td>18.A</td>
+                                    <td>19.B</td>
+                                    <td>20.B</td>
+                                </tr>
+                                <tr>
+                                    <td>21.B</td>
+                                    <td>22.A</td>
+                                    <td>23.B</td>
+                                    <td>24.A</td>
+                                    <td>25.A</td>
+                                </tr>
+                                <tr>
+                                    <td>26.A</td>
+                                    <td>27.A</td>
+                                    <td>28.B</td>
+                                    <td>29.A</td>
+                                    <td>30.B</td>
+                                </tr>
+                                <tr>
+                                    <td>31.B</td>
+                                    <td>32.B</td>
+                                    <td>33.A</td>
+                                    <td>34.A</td>
+                                    <td>35.A</td>
+                                </tr>
+                                <tr>
+                                    <td>36.B</td>
+                                    <td>37.B</td>
+                                    <td>38.A</td>
+                                    <td>39.A</td>
+                                    <td>40.A</td>
+                                </tr>
+                                <tr>
+                                    <td>41.A</td>
+                                    <td>42.A</td>
+                                    <td>43.B</td>
+                                    <td>44.A</td>
+                                    <td>45.A</td>
+                                </tr>
+                                <tr>
+                                    <td>46.B</td>
+                                    <td>47.A</td>
+                                    <td>48.B</td>
+                                    <td>49.B</td>
+                                    <td>50.A</td>
+                                </tr>
+                                <tr>
+                                    <td>51.B</td>
+                                    <td>52.A</td>
+                                    <td>53.A</td>
+                                    <td>54.A</td>
+                                    <td>55.B</td>
+                                </tr>
+                                <tr>
+                                    <td>56.A</td>
+                                    <td>57.B</td>
+                                    <td>58.A</td>
+                                    <td>59.A</td>
+                                    <td>60.A</td>
+                                </tr>
+                                <tr>
+                                    <td>61.A</td>
+                                    <td>62.B</td>
+                                    <td>63.B</td>
+                                    <td>64.A</td>
+                                    <td>65.A</td>
+                                </tr>
+                                <tr>
+                                    <td>66.A</td>
+                                    <td>67.B</td>
+                                    <td>68.B</td>
+                                    <td>69.A</td>
+                                    <td>70.B</td>
+                                </tr>
+                                <tr>
+                                    <td>71.B</td>
+                                    <td>72.A</td>
+                                    <td>73.B</td>
+                                    <td>74.B</td>
+                                    <td>75.A</td>
+                                </tr>
+                                <tr>
+                                    <td>76.A</td>
+                                    <td>77.B</td>
+                                    <td>78.A</td>
+                                    <td>79.A</td>
+                                    <td>80.A</td>
+                                </tr>
+                                <tr>
+                                    <td>81.B</td>
+                                    <td>82.A</td>
+                                    <td>83.A</td>
+                                    <td>84.B</td>
+                                    <td>85.B</td>
+                                </tr>
+                                <tr>
+                                    <td>86.A</td>
+                                    <td>87.B</td>
+                                    <td>88.B</td>
+                                    <td>89.B</td>
+                                    <td>90.B</td>
+                                </tr>
+                                <tr>
+                                    <td>91.A</td>
+                                    <td>92.A</td>
+                                    <td>93.A</td>
+                                    <td></td>
+                                    <td></td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <!--<div>
+                        8个指标中，两两对比取大值，剩余四个按找从多到少排序，获取到组合类型出评语
+                    </div>
+                    <div>
+                        评语及建议
+                    </div>-->
+                </div>
+
+                <div class="row " style="margin-top: 15px">
+                    <div class="col-sm-6 col-xs-6 col-sm-offset-3 col-xs-offset-3 ">
+                        <button class="btn btn-block btn-default">返&nbsp;&nbsp;回</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+</div>
+<script src="../js/commonJs/jquery.min.js"></script>
+<script src="../js/commonJs/bootstrap.min.js"></script>
+
+<script src="../js/commonJs/common.js"></script>
+
+</body>
+</html>

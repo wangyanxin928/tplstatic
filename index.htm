@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>评估</title>
+    <meta name="keywords" content="陪你画">
+    <meta name="description" content="陪你画">
+    <link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/common.css" rel="stylesheet">
+    <link href="../css/animate.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/owl.carousel.min.css">
+    <link rel="stylesheet" href="../css/owl.theme.default.min.css">
+    <link href="../css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="../css/ui-select.css">
+    <link href="../css/no-responsive.css" rel="stylesheet">
+
+    <!--[if lt IE 9]>
+    <script src="https://cdn.bootcss.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+    <script src="https://cdn.bootcss.com/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <script src="../js/jquery.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/jquery.actual.min.js"></script>
+    <script src="../js/owl.carousel.js"></script>
+    <script src="../js/jquery.style.js"></script>
+    <script src="../js/ui-select.js"></script>
+    <script src="../js/picturefill.min.js"></script>
+    <script language="javascript" src="../js/Validform_v5.js"></script>
+    <script type="text/javascript" src="../js/raphael-min.js"></script>
+    <script type="text/javascript" src="../js/chinaMapConfig.js"></script>
+    <script type="text/javascript" src="../js/map.js"></script>
+    <script type="text/javascript" src="../js/jquery.SuperSlide.2.1.1.js"></script>
+    <script>
+        document.createElement("picture");
+    </script>
+    <script src="../js/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
+</head>
+<body class="skin-cont">
+<nav class="navbar navbar-default">
+    <div class="container">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="index.htm"><img src="../images/logo.png"></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav navbar-left">
+
+                <li class="active"><a href="index.htm">首页</a></li>
+                <li><a href="evaluation.html">智能测评</a></li>
+                <li><a href="evaluationBox/experience1.html">研学体验</a></li>
+                <li><a href="theEntrance/university/school1.html">升学检索</a></li>
+                <li><a href="theEntrance/university/theEntrance.html">升学资讯</a></li>
+                <li><a href="aboutUs/marketCoverage.html">关于我们</a></li>
+            </ul>
+            <div class="user-a navbar-left">
+                <a href="login.html"><span><img src="../images/img-02.png"></span>登录</a>
+                <a href="register.html"><span><img src="../images/img-03.png"></span>注册</a>
+
+            </div>
+        </div>
+    </div>
+</nav>
+
+
+<div class="owl-carousel new-banner">
+    <div class="item">
+        <div class="box box-01"><a href="" target="_self"><img src="../images/b-txt-1.png" alt="出生"></a></div>
+    </div>
+    <div class="item">
+        <div class="box box-02"><a href="" target="_self"><img src="../images/b-txt-2.png" alt="幼儿"></a></div>
+    </div>
+    <div class="item">
+        <div class="box box-03"><a href="" target="_self"><img src="../images/b-txt-3.png" alt="小学"></a></div>
+    </div>
+    <div class="item">
+        <div class="box box-04"><a href="" target="_self"><img src="../images/b-txt-4.png" alt="中学"></a></div>
+    </div>
+    <div class="item">
+        <div class="box box-05"><a href="" target="_self"><img src="../images/b-txt-5.png" alt="高等教育"></a></div>
+    </div>
+    <div class="item">
+        <div class="box box-06"><a href="" target="_self"><img src="../images/b-txt-6.png" alt="责任＋奋斗期"></a></div>
+    </div>
+    <div class="item">
+        <div class="box box-07"><a href="" target="_self"><img src="../images/b-txt-7.png" alt="老年期"></a></div>
+    </div>
+</div>
+<script>
+    var bannerTitle = [
+        '<span class="ch">出生</span><span class="en">Birth</span>',
+        '<span class="ch">幼儿</span><span class="en">Child</span>',
+        '<span class="ch">小学</span><span class="en">Primary school</span>',
+        '<span class="ch">中学</span><span class="en">Middle school</span>',
+        '<span class="ch">高等教育</span><span class="en">Higher Education</span>',
+        '<span class="ch">责任＋奋斗期</span><span class="en">responsibility</span>',
+        '<span class="ch">老年期</span><span class="en">Senile period</span>',
+    ];
+    $(window).load(function () {
+        $('.banner-dots .owl-dot').each(function () {
+            var index = $(this).index();
+            console.log(index)
+            $(this).html(bannerTitle[index]);
+        });
+    });
+    $('.new-banner').owlCarousel({
+        loop: true,
+        margin: 170,
+        nav: true,
+        autoWidth: true,
+        items: 2,
+        center: true,
+        dotsClass: 'banner-dots',
+        navText: ['', ''],
+        startPosition: 3
+    })
+    //console.log($('.owl-dot').size())
+</script>
+<div class="index-top">
+    <div class="t-img"></div>
+    <div class="t-cont ovh">
+        <!--内容 start-->
+        <div class="evaluating">
+            <div class="index-container">
+                <div class="index-title t-black new-title">
+                    <div class="ch">
+                        中学生学业生涯规划服务平台
+                        <span>AI自检＋大数据分析＝智能评估引领升学</span>
+                    </div>
+                </div>
+                <div class="review-box-new">
+                    <div class="row">
+                        <div class="col-md-3 col-xs-6 box-w">
+                            <div class="s-box">
+                                <img src="../images/1.jpg">
+                                <div class="b-cont">
+                                    <div class="b-icon"><a href="javascript:void(0)" class="login-b" title="学业现状自检"><img
+                                            src="../images/c41e7c4156125d2e1c20dc7f2cee1892.png" alt="学业现状自检"></a></div>
+                                    <div class="a-warp">
+                                        <a href="javascript:void(0)" class="login-b b-title mt-02" title="学业现状自检">
+                                            <span>学业现状自检</span>
+                                            School status self check </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6 box-w">
+                            <div class="s-box">
+                                <img src="../images/2.jpg">
+                                <div class="b-cont">
+                                    <div class="b-icon"><a href="javascript:void(0)" class="login-b" title="兴趣选课测量"><img
+                                            src="../images/f792a5ea6ee5f9afb1408add74da15c7.png" alt="兴趣选课测量"></a></div>
+                                    <div class="a-warp">
+                                        <a href="javascript:void(0)" class="login-b b-title mt-02" title="兴趣选课测量">
+                                            <span>兴趣选课测量</span>
+                                            Elective course measurement </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6 box-w">
+                            <div class="s-box">
+                                <img src="../images/3.jpg">
+                                <div class="b-cont">
+                                    <div class="b-icon"><a href="javascript:void(0)" class="login-b" title="高校专业选择"><img
+                                            src="../images/7696360b261a668122531155a28da10d.png" alt="高校专业选择"></a></div>
+                                    <div class="a-warp">
+                                        <a href="javascript:void(0)" class="login-b b-title mt-02" title="高校专业选择">
+                                            <span>高校专业选择</span>
+                                            University professional choice </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3 col-xs-6 box-w">
+                            <div class="s-box">
+                                <img src="../images/4.jpg">
+                                <div class="b-cont">
+                                    <div class="b-icon"><a href="javascript:void(0)" class="login-b" title="未来职业评估"><img
+                                            src="../images/e0af734579194549414d9c6caa01d0a0.png" alt="未来职业评估"></a></div>
+                                    <div class="a-warp">
+                                        <a href="javascript:void(0)" class="login-b b-title mt-02" title="未来职业评估">
+                                            <span>未来职业评估</span>
+                                            Future career evaluation </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="smart-metering-index">
+                    <div class="m-title">
+                        AI智能测评（自检）
+                    </div>
+                    <div class="box-icon">
+                        <div class="row">
+                            <div class="box-b"><img src="../images/img-36.png"></div>
+                            <div class="box-s"><img src="../images/img-35.png"></div>
+                            <div class="box-b"><img src="../images/img-37.png"></div>
+                            <div class="box-s"><img src="../images/img-35.png"></div>
+                            <div class="box-b"><img src="../images/img-38.png"></div>
+                            <div class="box-s"><img src="../images/img-35.png"></div>
+                            <div class="box-b"><img src="../images/img-39.png"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div><!--智能测评 end-->
+        <div class="academic-camp">
+            <div class="index-title t-black">
+                <div class="ch">《全国中学生走进名企.名校.学涯规划研学体验系列营》</div>
+            </div>
+            <div class="index-container">
+                <div class="tabs-tit">
+                    <a href="evaluationBox/experience1.html" class="current">研学营文件</a>
+                    <a href="evaluationBox/experience2.html">往期案例</a>
+                    <a href="javascript:;">学业规划培训</a>
+                </div>
+                <div class="tabs-cont">
+                    <div style="display: block">
+
+                        <div id="slideBox" class="slideBox">
+                            <div class="r-main">
+                                <div class="b-title">
+                                    全国中学生学业生涯规划公益践行计划
+                                </div>
+                                <div class="txt">
+                                    <strong>内容简要：</strong> 据国外媒体报道，市场研究机构Juniper
+                                    Research公司日前在其最新公布的一项报告中，对5G的采用前景做出了极富远见的预测：到2025年，全球5G服务收入有望突破650亿美元，较其2020年正式投入商业运营第一年的1亿美元暴增，并将占到2025年运营商服务总收
+                                </div>
+                                <div>
+                                    <a href="javascript:void(0)"
+                                       class="a-s a-1">了解更多</a>
+                                    <a href="evaluationBox/experience4.html "
+                                       class="a-s a-2 ml10">立即报名</a>
+                                </div>
+                            </div>
+                            <div class="bd">
+                                <ul>
+                                    <li>
+                                        <div class="box-02">
+                                            <div class="l-main">
+                                                <div class="img-s"
+                                                     style="background: url('../images/b-3.jpg') no-repeat right top"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box-02">
+                                            <div class="l-main">
+                                                <div class="img-s"
+                                                     style="background: url('../images/b-5.jpg') no-repeat right top"></div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="hd fix">
+                                <a class="prev" href="javascript:void(0)"></a>
+                                <a class="next" href="javascript:void(0)"></a>
+                            </div>
+
+
+                        </div>
+
+                        <script type="text/javascript">
+                            jQuery(".slideBox").slide({mainCell: ".bd ul", autoPlay: true});
+                        </script>
+
+                    </div>
+                    <div>
+                        <div class="picScroll-left" id="picScroll1">
+                            <div class="hd">
+                                <a class="next"></a>
+                                <a class="prev"></a>
+                            </div>
+                            <div class="bd">
+                                <ul class="picList">
+                                    <li>
+                                        <div class="box">
+                                            <div class="pic"><a
+                                                    href="evaluationBox/experience1.html"
+                                                    title="学习不是千篇一律，因科制宜才是良策"><img
+                                                    src="../images/cec76c36dbdf01aac3fdf3be9293eb50.png"
+                                                    alt="学习不是千篇一律，因科制宜才是良策"></a></div>
+                                            <div class="main">
+                                                <a href="evaluationBox/experience1.html"
+                                                   title="学习不是千篇一律，因科制宜才是良策" class="title">学习不是千篇一律，因科制宜才是良...</a>
+                                                <div class="txt">提纲预习法就是把将要学的内容列成不同形式的提纲，提炼概括为有逻辑联系的纲要结构，便于</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box">
+                                            <div class="pic"><a
+                                                    href="evaluationBox/experience1.html"
+                                                    title="高一起跑线，再不和孩子讲清楚这些"><img
+                                                    src="../images/08b5184bebe1f9e45629e87b013099a8.png"
+                                                    alt="高一起跑线，再不和孩子讲清楚这些"></a></div>
+                                            <div class="main">
+                                                <a href="evaluationBox/experience1.html"
+                                                   title="高一起跑线，再不和孩子讲清楚这些" class="title">高一起跑线，再不和孩子讲清楚这些</a>
+                                                <div class="txt">新学期终于顺利的开始啦！看着孩子们带着饱满的精神面貌参加开学典礼，小编心里别提有多激</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box">
+                                            <div class="pic"><a
+                                                    href="evaluationBox/experience1.html"
+                                                    title="2017夏.全国中学生走进名企.名校.学涯规划研学体"><img
+                                                    src="../images/565347f70906a8d9f00fc893134c23d5.png"
+                                                    alt="2017夏.全国中学生走进名企.名校.学涯规划研学体"></a></div>
+                                            <div class="main">
+                                                <a href="evaluationBox/experience1.html"
+                                                   title="2017夏.全国中学生走进名企.名校.学涯规划研学体" class="title">2017夏.全国中学生走进名企.名校....</a>
+                                                <div class="txt">时间过的飞快，今天是学霸营的最后一天了。早上我们来到中华航天博物馆，观看我国航天工程的最...</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            jQuery("#picScroll1").slide({
+                                titCell: ".hd ul",
+                                mainCell: ".bd ul",
+                                autoPage: true,
+                                effect: "leftLoop",
+                                autoPlay: true,
+                                vis: 3,
+                                trigger: "click"
+                            });
+                        </script>
+                    </div>
+                    <div>
+                        <div class="picScroll-left" id="picScroll2">
+                            <div class="hd">
+                                <a class="next"></a>
+                                <a class="prev"></a>
+                            </div>
+                            <div class="bd">
+                                <ul class="picList">
+                                    <li>
+                                        <div class="box">
+                                            <div class="pic"><a href="#"><img src="../images/img-60.png"></a></div>
+                                            <div class="main">
+                                                <a href="#" class="title">学习不是千篇一律，因科制宜才是良策</a>
+                                                <div class="txt">提纲预习法就是把将要学的内容列成不同形式的提纲，提炼概括为有逻辑联系的纲要结构，便于...</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box">
+                                            <div class="pic"><a href="#"><img src="../images/img-60.png"></a></div>
+                                            <div class="main">
+                                                <a href="#" class="title">学习不是千篇一律，因科制宜才是良策</a>
+                                                <div class="txt">提纲预习法就是把将要学的内容列成不同形式的提纲，提炼概括为有逻辑联系的纲要结构，便于...</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box">
+                                            <div class="pic"><a href="#"><img src="../images/img-60.png"></a></div>
+                                            <div class="main">
+                                                <a href="#" class="title">学习不是千篇一律，因科制宜才是良策</a>
+                                                <div class="txt">提纲预习法就是把将要学的内容列成不同形式的提纲，提炼概括为有逻辑联系的纲要结构，便于...</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box">
+                                            <div class="pic"><a href="#"><img src="../images/img-60.png"></a></div>
+                                            <div class="main">
+                                                <a href="#" class="title">学习不是千篇一律，因科制宜才是良策</a>
+                                                <div class="txt">提纲预习法就是把将要学的内容列成不同形式的提纲，提炼概括为有逻辑联系的纲要结构，便于...</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box">
+                                            <div class="pic"><a href="#"><img src="../images/img-60.png"></a></div>
+                                            <div class="main">
+                                                <a href="#" class="title">学习不是千篇一律，因科制宜才是良策</a>
+                                                <div class="txt">提纲预习法就是把将要学的内容列成不同形式的提纲，提炼概括为有逻辑联系的纲要结构，便于...</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="box">
+                                            <div class="pic"><a href="#"><img src="../images/img-60.png"></a></div>
+                                            <div class="main">
+                                                <a href="#" class="title">学习不是千篇一律，因科制宜才是良策</a>
+                                                <div class="txt">提纲预习法就是把将要学的内容列成不同形式的提纲，提炼概括为有逻辑联系的纲要结构，便于...</div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <script type="text/javascript">
+                            jQuery("#picScroll2").slide({
+                                titCell: ".hd ul",
+                                mainCell: ".bd ul",
+                                autoPage: true,
+                                effect: "leftLoop",
+                                autoPlay: true,
+                                vis: 3,
+                                trigger: "click"
+                            });
+                        </script>
+                    </div>
+                </div>
+            </div>
+
+        </div><!--研学营 end-->
+        <div class="retrieval">
+            <div class="index-container">
+                <div class="index-title t-black">
+                    <div class="ch">中学生升学＋培优检索</div>
+                </div>
+                <ul class="fix">
+                    <li>
+                        <div class="box box-01">
+                            <div class="icon"><a href="theEntrance/university/theEntrance.html"
+                                                 title="高校招简"><img src="../images/01.png" alt="高校招简"></a></div>
+                            <div class="title">
+                                <span><a style="color:#ffffff"
+                                         href="theEntrance/university/theEntrance.html" title="高校招简">高校招简</a></span>
+                                University profiles
+                            </div>
+                            <div class="a-group"><a href="theEntrance/university/school1.html"
+                                                    title="独立院校">独立院校</a>
+                                <a href="theEntrance/university/school2.html"
+                                   title="双一流高校">双一流高校</a>
+                                <a href="theEntrance/university/school3.html" title="普通高校">普通高校</a>
+                                <a href="theEntrance/university/school4.html" title="艺术院校">艺术院校</a>
+                                <a href="theEntrance/university/school5.html" title="高职专科">高职专科</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box box-01">
+                            <div class="icon"><a href="http://web1709280001.gz01.bdysite.com/category/index/20"
+                                                 title="教培搜索"><img src="../images/02.png" alt="教培搜索"></a></div>
+                            <div class="title">
+                                <span><a style="color:#ffffff"
+                                         href="http://web1709280001.gz01.bdysite.com/category/index/20" title="教培搜索">教培搜索</a></span>
+                                Dr. Jane training
+                            </div>
+                            <div class="a-group"><a href="theEntrance/university/school6.html"
+                                                    title="技能培训">技能培训</a>
+                                <a href="theEntrance/university/school7.html"
+                                   title="学科与竞赛">学科与竞赛</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="box box-01">
+                            <div class="icon"><a href="theEntrance/university/school8.html"
+                                                 title="留学与游学"><img src="../images/03.png" alt="留学与游学"></a></div>
+                            <div class="title">
+                                <span><a style="color:#ffffff"
+                                         href="theEntrance/university/school8.html" title="留学与游学">留学与游学</a></span>
+                                Dr. Jane training
+                            </div>
+                            <div class="a-group"><a href="theEntrance/university/school9.html"
+                                                    title="留学">留学</a>
+                                <a href="theEntrance/university/school9.html" title="游学">游学</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div><!--升学检索 end-->
+        <!--内容 end-->
+    </div>
+    <div class="b-img"></div>
+</div>
+<div class="index-btm ovh">
+    <div class="information">
+        <div class="index-container main-w">
+            <div class="main-bg"></div>
+            <div class="main">
+                <div class="index-title t-black">
+                    <div class="ch">中学生升学资讯</div>
+                </div>
+                <div class="box-w fix">
+                    <div class="box">
+                        <div class="pic"><a href="consultation/consultation1.html"
+                                            title="新高考.新资讯"><img src="../images/img-52.png" alt="新高考.新资讯"></a></div>
+                        <div class="m-title">
+                            <a href="consultation/consultation1.html" class="a-tit"
+                               title="新高考.新资讯">新高考.新资讯</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="pic"><a href="consultation/consultation2.html"
+                                            title="中学生升学竞赛培优"><img src="../images/img-53.png" alt="中学生升学竞赛培优"></a></div>
+                        <div class="m-title">
+                            <a href="consultation/consultation2.html" class="a-tit"
+                               title="中学生升学竞赛培优">中学生升学竞赛培优</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="pic"><a href="consultation/consultation3.html"
+                                            title="中学生社会实践活动"><img src="../images/img-54.png" alt="中学生社会实践活动"></a></div>
+                        <div class="m-title">
+                            <a href="consultation/consultation3.html" class="a-tit"
+                               title="中学生社会实践活动">中学生社会实践活动</a>
+                        </div>
+                    </div>
+                    <div class="box">
+                        <div class="pic"><a href="consultation/consultation4.html"
+                                            title="科技时代职业发展变化"><img src="../images/img-55.png" alt="科技时代职业发展变化"></a></div>
+                        <div class="m-title">
+                            <a href="consultation/consultation4.html" class="a-tit"
+                               title="科技时代职业发展变化">科技时代职业发展变化</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="btm-s">
+                    <span><img src="../images/57f7d4fc5dbdb97798185ecb179f2a34.jpg"></span>
+                    <a href="#" class="a-more">更多资讯</a>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="market-coverage">
+        <div class="index-title t-black">
+            <div class="en">Market coverage</div>
+            <div class="ch">市场覆盖</div>
+        </div>
+        <div class="main">
+            <div class="container">
+                <div class="a-warp">
+                    <a href="javascript:;">企业简介</a>
+                    <a href="javascript:;">联系我们</a>
+                </div>
+                <div class="map-warp">
+                    <div id="ChinaMap"></div>
+                    <script>
+                        $(function () {
+                            $('#ChinaMap').SVGMap({
+                                mapName: 'china',
+                                mapWidth: 670,
+                                mapHeight: 560,
+                                stateData: {
+                                    'beijing': {'stateInitColor': 0},
+                                    'shanghai': {'stateInitColor': 0},
+                                    'zhejiang': {'stateInitColor': 0},
+                                    'shandong': {'stateInitColor': 0},
+                                    'henan': {'stateInitColor': 0},
+                                    'anhui': {'stateInitColor': 0},
+                                    'jiangsu': {'stateInitColor': 0},
+                                    'sichuan': {'stateInitColor': 0},
+                                    'chongqing': {'stateInitColor': 0},
+                                    'shaanxi': {'stateInitColor': 0},
+                                    'gansu': {'stateInitColor': 0},
+                                    'heilongjiang': {'stateInitColor': 0},
+                                    'liaoning': {'stateInitColor': 0},
+                                    'neimongol': {'stateInitColor': 0},
+                                    'yunnan': {'stateInitColor': 0}
+                                },
+                                clickCallback: function (stateData, obj) {
+                                    window.location.href = "/category/search?k=" + obj.name;
+                                }
+                            });
+                        })
+                    </script>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<a href="javascript:;" class="go-back"><img src="../images/go-top.png"></a>
+
+<div class="mc"></div>
+<div class="col-md-4 col-md-offset-4 col-xs-12 login-box">
+    <a href="javascript:;" class="close"><img src="../images/close.png"></a>
+    <h3>您还未登陆，请 <a href="javascript:;">登录</a>后操作！</h3>
+    <a href="javascript:;" class="a-s mt30">去注册</a>
+</div>
+<footer>
+    <div class="container">
+        <div class="other-info">
+            <div class="row">
+                <div class="col-lg-4 col-sm-8 other-l">
+                    <div class="l-info">
+                        <div class="tel">
+                            <span>010-5715-7190</span>
+                            24小时咨询热线
+                        </div>
+                        <div class="txt">
+                            <p>客服工作时间：</p>
+                            <p class="mb5">周一至周日 9：00 -- 23：00</p>
+                            <p>地址：北京市北京经济技术开发区隆庆街18号</p>
+                        </div>
+                    </div>
+                    <div class="l-erwm"><img src="../images/57f7d4fc5dbdb97798185ecb179f2a34.jpg"></div>
+                </div>
+                <div class="col-lg-2 col-sm-4 col-lg-push-6 f-erwm fix">
+                    <div class="erwm-group">
+                        <div class="erwm-box">
+                            <img src="../images/img-62.png">
+                            <div class="img-s">
+                                <img src="../images/5fcec97f7667a045689ca88b0b32dd08.jpg">
+                            </div>
+                        </div>
+                        <div class="erwm-box">
+                            <img src="../images/img-63.png">
+                            <div class="img-s">
+                                <img src="../images/3cc98425fe27bd3f456f804a8906b6e4.jpg">
+                            </div>
+                        </div>
+                        <div class="erwm-box">
+                            <img src="../images/img-64.png">
+                            <div class="img-s">
+                                <img src="../images/4c6eb8525d39209a5f3779f5e3130120.jpg">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="clear-line fix"></div>
+                <div class="col-lg-6 col-lg-pull-2 other-r">
+                    <div class="row">
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">智能测评</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="javascript:;" class="login-b" title="学业现状自检">学业现状自检</a>
+                                    <a href="javascript:;" class="login-b" title="兴趣选课测量">兴趣选课测量</a>
+                                    <a href="javascript:;" class="login-b" title="高校专业选择">高校专业选择</a>
+                                    <a href="javascript:;" class="login-b" title="未来职业评估">未来职业评估</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">研学体验</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="evaluationBox/experience1.html"
+                                       title="研学营文件">研学营文件</a>
+                                    <a href="evaluationBox/experience2.html"
+                                       title="往期案例">往期案例</a>
+                                    <a href="#" title="学业规划培训">学业规划培训</a>
+                                    <a href="evaluationBox/experience4.html"
+                                       title="报名链接">报名链接</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">升学检索</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="http://web1709280001.gz01.bdysite.com/category/index/19"
+                                       title="高校招简">高校招简</a>
+                                    <a href="http://web1709280001.gz01.bdysite.com/category/index/20"
+                                       title="教培搜索">教培搜索</a>
+                                    <a href="evaluationBox/experience4.html" title="留学与游学">留学与游学</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">升学资讯</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="consultation/consultation1.html" title="新高考.新资讯">新高考.新资</a>
+                                    <a href="consultation/consultation2.html" title="中学生升学竞赛培优">中学生升学竞</a>
+                                    <a href="consultation/consultation3.html" title="中学生社会实践活动">中学生社会实</a>
+                                    <a href="consultation/consultation4.html"
+                                       title="科技时代职业发展变化">科技时代职业</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-5ths box-w">
+                            <div class="box">
+                                <div class="m-title fix ovh">
+                                    <span class="fl b">关于我们</span>
+                                    <span class="glyphicon glyphicon-menu-down fr" aria-hidden="true"></span>
+                                </div>
+                                <div class="main">
+                                    <a href="aboutUs/marketCoverage.html	"
+                                       title="市场覆盖">市场覆盖</a>
+                                    <a href="aboutUs/enterpriseIntroduction.html"
+                                       title="企业简介">企业简介</a>
+                                    <a href="aboutUs/contactUs.html"
+                                       title="联系我们">联系我们</a>
+                                    <a href="aboutUs/weChat.html"
+                                       title="微信链接">微信链接</a>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="copy">
+            Copyright 2017, Peinihua.com.All Rights Reserved 陪你画 京ICP备000000号
+        </div>
+    </div>
+</footer>
+<!--
+<div class="mc"></div>
+<div class="col-md-4 col-md-offset-4 col-xs-12 login-box">
+    <a href="javascript:;" class="close"><img src="images/close.png" ></a>
+    <h3>您还未登陆，请 <a href="http://web1709280001.gz01.bdysite.com/member">登录</a>后操作！</h3>
+    <a href="http://web1709280001.gz01.bdysite.com/member/reg" class="a-s mt30">去注册</a>
+</div>
+-->
+<div class="tcnew">
+    <div class="showcontent">
+        <div class="l_gx">
+            <p style="color:white;font-size:16px;" class="contentshow"></p>
+        </div>
+    </div>
+</div>
+</html>
+
